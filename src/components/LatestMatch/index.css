@@ -1,0 +1,61 @@
+/* Write your CSS here */
+.latest-match-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #0f172a;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.latest-match-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #475569;
+  padding: 10px 0;
+  width: 100%;
+}
+.latest-match-profile > div {
+  padding-right: 50px;
+}
+.latest-match-profile > div > p {
+  padding: 10px 0;
+}
+.latest-match-profile > img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.latest-match-innings {
+  width: 100%;
+}
+.latest-match-innings > div {
+  padding: 5px 0;
+}
+.latest-match-innings > div > p {
+  padding: 5px;
+}
+.latest-match-innings > div > p:nth-child(2) {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .latest-match-container {
+    flex-direction: row;
+  }
+  .latest-match-profile {
+    border: none;
+    flex-grow: 1;
+  }
+  .latest-match-innings {
+    text-align: right;
+    width: 500px;
+  }
+  .latest-match-profile > img {
+    width: 100%;
+    max-width: 150px;
+  }
+}
