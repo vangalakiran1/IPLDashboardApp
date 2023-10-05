@@ -20,7 +20,7 @@ const LatestMatch = props => {
     <div className="latest-match-container">
       <div className="latest-match-profile">
         <div>
-          <h2>{competingTeam}</h2>
+          <p>{competingTeam}</p>
           <p>{date}</p>
           <p>{venue}</p>
           <p>{result}</p>
